@@ -8,7 +8,7 @@ import { projects, projectFilters } from "../data/portfolioData";
 const filterMap = {
   All: () => true,
   ".NET": (p) => p.category === "dotnet",
-  MERN: (p) => p.category === "mern",
+  PHP: (p) => p.category === "php",
   React: (p) => p.category === "react",
   "Node.js": (p) => p.category === "node",
 };

@@ -66,7 +66,7 @@ export default function Skills() {
               </h3>
               <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
                 {category.skills.map((skill, i) => {
-                  const Icon = iconMap[skill.icon] || SiReact;
+                  const Icon = iconMap[skill.icon] || Monitor;
                   return (
                     <motion.div
                       key={skill.name}

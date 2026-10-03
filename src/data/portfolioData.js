@@ -28,11 +28,12 @@ export const navLinks = [
   { label: "Contact", href: "#contact" },
 ];
 
-export const aboutBio = `Software Engineer with 1.5+ years of experience building backend systems and full-stack web applications using ASP.NET Core, Node.js, NestJS, React.js, and SQL Server. Experienced in developing scalable REST APIs, real-time GPS tracking systems, and enterprise-grade government solutions including Suthra Punjab. Strong expertise in database optimization, authentication systems, and clean architecture.`;
+export const aboutBio = `Software Engineer with professional experience building backend systems and full-stack web applications using ASP.NET Core, C#, Node.js, NestJS, React.js, and SQL databases. Experienced in developing REST APIs, authentication and authorization systems, database-driven applications, and real-time tracking solutions.
+
+I've worked on enterprise and government projects as well as independent applications, with a focus on clean architecture, maintainable code, and practical software engineering. I'm also currently expanding my knowledge in Linux, networking, and cybersecurity.`;
 
 export const stats = [
   { icon: "briefcase", label: "1.5+ Years Experience" },
-  { icon: "check", label: "5+ Projects Completed" },
   { icon: "graduation", label: "BS CS — NUTECH" },
   { icon: "map", label: "Rawalpindi, Pakistan" },
 ];
@@ -41,33 +42,36 @@ export const skillCategories = [
   {
     name: "Backend",
     skills: [
+      { name: "C#", icon: "csharp" },
+      { name: ".NET", icon: "dotnet" },
       { name: "ASP.NET Core", icon: "dotnet" },
       { name: "Node.js", icon: "nodejs" },
       { name: "NestJS", icon: "nestjs" },
-      { name: "Express.js", icon: "express" },
-      { name: "C#", icon: "csharp" },
+      { name: "REST APIs", icon: "rest" },
     ],
   },
   {
     name: "Frontend",
     skills: [
       { name: "React.js", icon: "react" },
-      { name: "Next.js", icon: "nextjs" },
       { name: "TypeScript", icon: "typescript" },
-      { name: "Tailwind CSS", icon: "tailwind" },
+      { name: "JavaScript", icon: "javascript" },
+      { name: "HTML5", icon: "html5" },
+      { name: "CSS", icon: "css" },
     ],
   },
   {
     name: "Databases",
     skills: [
-      { name: "SQL Server", icon: "sqlserver" },
+      { name: "Microsoft SQL Server", icon: "sqlserver" },
       { name: "MySQL", icon: "mysql" },
-      { name: "MongoDB", icon: "mongodb" },
       { name: "PostgreSQL", icon: "postgresql" },
+      { name: "MongoDB", icon: "mongodb" },
+      { name: "Entity Framework Core", icon: "entity-framework" },
     ],
   },
   {
-    name: "DevOps",
+    name: "DevOps & Tools",
     skills: [
       { name: "Docker", icon: "docker" },
       { name: "Azure DevOps", icon: "azure" },
@@ -76,12 +80,11 @@ export const skillCategories = [
     ],
   },
   {
-    name: "Tools",
+    name: "Other",
     skills: [
-      { name: "Postman", icon: "postman" },
-      { name: "JIRA", icon: "jira" },
-      { name: "Visual Studio", icon: "visualstudio" },
-      { name: "VS Code", icon: "vscode" },
+      { name: "PHP", icon: "php" },
+      { name: "Python", icon: "python" },
+      { name: "Clean Architecture", icon: "clean-architecture" },
     ],
   },
 ];
@@ -89,35 +92,35 @@ export const skillCategories = [
 export const projects = [
   {
     id: 1,
-    title: "Suthra Punjab",
-    emoji: "🏛️",
+    title: "MedLine Rural — Medical Supply & Delivery Management System",
+    emoji: "🏥",
     description:
-      "Live government waste management system handling high-volume transactional data with automated reporting workflows.",
-    tech: ["ASP.NET Core", "SQL Server", "REST API"],
-    category: "dotnet",
-    professional: true,
+      "Built a web-based medical supply and delivery management system for rural and remote clinics, covering inventory, supply requests, shipments, vehicles, and drivers. Implemented role-based access control, clinic-level data isolation, shipment tracking, simulated GPS/temperature telemetry, alerts, and operational dashboards.",
+    tech: ["PHP", "MySQL", "JavaScript"],
+    category: "php",
+    professional: false,
     github: null,
     live: null,
   },
   {
     id: 2,
-    title: "GPS Vehicle Tracking System",
-    emoji: "🚗",
+    title: "Complaint Management System",
+    emoji: "📋",
     description:
-      "Real-time vehicle tracking with GPS ingestion, POI proximity logic, and automated alerting via SignalR.",
-    tech: ["ASP.NET Core", "SQL Server", "SignalR"],
+      "Developed a backend-centric complaint management system using ASP.NET Core and SQL Server, with REST APIs for managing complaint workflows and application data.",
+    tech: ["ASP.NET Core", "SQL Server", "REST APIs"],
     category: "dotnet",
-    professional: true,
+    professional: false,
     github: null,
     live: null,
   },
   {
     id: 3,
-    title: "Sales Forecasting Tool",
+    title: "Sales Forecasting Tool for E-commerce",
     emoji: "📊",
     description:
-      "ML-integrated e-commerce forecasting platform with interactive analytics dashboard and Node.js REST API.",
-    tech: ["Node.js", "React.js", "Python", "MongoDB"],
+      "Built an e-commerce sales forecasting tool integrating machine-learning-based forecasting with a Node.js REST API and React dashboard for visualizing forecasting results.",
+    tech: ["Node.js", "React.js", "Python"],
     category: "node",
     professional: true,
     github: null,
@@ -128,103 +131,116 @@ export const projects = [
     title: "ScrollSafeApp",
     emoji: "📱",
     description:
-      "Full MERN social platform with JWT auth, real-time feed, posts, likes, and comments.",
-    tech: ["MongoDB", "Express", "React", "Node.js", "JWT"],
-    category: "mern",
+      "Built a social media web application with user profiles, posts, likes, comments, and content exploration.",
+    tech: ["React.js", "Node.js", "MongoDB"],
+    category: "react",
     professional: false,
     github: "https://github.com/usama9293/scrollSafeApp",
     live: null,
   },
   {
     id: 5,
-    title: "Todo App (Firebase)",
-    emoji: "✅",
+    title: "Suthra Punjab Waste Management System",
+    emoji: "♻️",
     description:
-      "Task manager with real-time updates, Redux state management, and Firebase backend.",
-    tech: ["React", "Redux", "Firebase"],
-    category: "react",
-    professional: false,
-    github: "https://github.com/usama9293/todo-list",
+      "Worked on a government waste management system supporting backend services, application workflows, and data-driven operations for waste management activities.",
+    tech: ["ASP.NET Core", "SQL Server", "REST APIs"],
+    category: "dotnet",
+    professional: true,
+    github: null,
     live: null,
   },
   {
     id: 6,
-    title: "Blog Platform",
-    emoji: "📝",
+    title: "Real-Time GPS Vehicle Tracking System",
+    emoji: "🚗",
     description:
-      "Full-stack blog platform with CRUD operations, user authentication, and rich content management.",
-    tech: ["Node.js", "MongoDB", "EJS"],
-    category: "node",
-    professional: false,
-    github: "https://github.com/usama9293/blog",
-    live: null,
-  },
-  {
-    id: 7,
-    title: "Airbnb Clone",
-    emoji: "🏠",
-    description:
-      "Property listing platform with search, filters, booking flow, and user reviews.",
-    tech: ["Node.js", "EJS", "MongoDB"],
-    category: "node",
-    professional: false,
-    github: "https://github.com/usama9293/airbnb",
-    live: null,
-  },
-  {
-    id: 8,
-    title: "Selenium Automation Suite",
-    emoji: "🧪",
-    description:
-      "Web automation test scripts for end-to-end testing of web applications.",
-    tech: ["Selenium", "JavaScript"],
-    category: "node",
-    professional: false,
-    github: "https://github.com/usama9293/selenium_project",
+      "Developed a real-time vehicle tracking system with GPS data handling, point-of-interest proximity logic, and automated alerts using SignalR.",
+    tech: ["ASP.NET Core", "SQL Server", "SignalR"],
+    category: "dotnet",
+    professional: true,
+    github: null,
     live: null,
   },
 ];
 
-export const projectFilters = ["All", ".NET", "MERN", "React", "Node.js"];
+export const projectFilters = ["All", ".NET", "PHP", "Node.js", "React"];
 
 export const experience = [
   {
     company: "CodingKey",
-    role: "Software Engineer (.NET / Node.js)",
+    role: "Software Engineer",
+    location: "Islamabad, Pakistan",
     period: "Nov 2025 – Apr 2026",
+    technologies: [
+      "C#",
+      ".NET",
+      "ASP.NET Core",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "MySQL",
+      "REST APIs",
+      "JWT",
+      "Clean Architecture",
+    ],
     highlights: [
-      "Developed API modules using ASP.NET Core and NestJS for high-volume business-critical workflows",
-      "Optimized MySQL schemas and queries, improving response times by up to 40%",
-      "Implemented JWT authentication and RBAC, reducing bug reports by ~20%",
-      "Collaborated with React.js frontend developers following clean architecture principles",
+      "Developed RESTful APIs and backend services using ASP.NET Core, C#, Node.js, and NestJS.",
+      "Designed and optimized MySQL database schemas and queries for application features.",
+      "Implemented JWT-based authentication and role-based authorization.",
+      "Applied Clean Architecture principles and collaborated with frontend and QA teams to develop, test, and troubleshoot application features.",
     ],
   },
   {
-    company: "AskTech Ltd.",
-    role: "Software Engineer (ASP.NET Core)",
+    company: "AskTech (Pvt) Ltd.",
+    role: "Software Engineer",
+    location: "Rawalpindi, Pakistan",
     period: "Mar 2025 – Nov 2025",
+    technologies: [
+      "C#",
+      "ASP.NET Core",
+      ".NET",
+      "SQL Server",
+      "Web API",
+      "REST APIs",
+      "Entity Framework Core",
+      "Git",
+      "Azure DevOps",
+    ],
     highlights: [
-      "Led backend development of Suthra Punjab — a live government Waste Management System",
-      "Built real-time GPS vehicle tracking with automated alerting via SignalR",
-      "Delivered ASP.NET Core Web APIs and SQL Server databases for 3+ enterprise clients",
-      "Engineered schema optimizations reducing query response times across mission-critical workflows",
+      "Developed ASP.NET Core Web APIs and SQL Server solutions for enterprise applications.",
+      "Worked on the Suthra Punjab Waste Management System, a government waste management platform, supporting reporting and operational workflows.",
+      "Built a real-time GPS vehicle tracking system with POI detection and automated alerts.",
+      "Optimized SQL queries and integrated third-party APIs to improve application reliability and performance.",
+    ],
+  },
+  {
+    company: "Islamabad Solar House",
+    role: "Technical Sales Engineer",
+    location: "Islamabad, Pakistan",
+    period: "Sep 2024 – Jan 2025",
+    technologies: ["Technical Consulting", "Client Communication", "Solution Analysis"],
+    highlights: [
+      "Consulted with clients to understand their energy requirements and recommended suitable solar energy solutions.",
+      "Collaborated with the technical team to support the implementation of solar energy systems.",
     ],
   },
   {
     company: "Pakistan International Airlines",
     role: "Web Developer Intern",
+    location: "Islamabad, Pakistan",
     period: "Aug 2023 – Sep 2023",
+    technologies: ["HTML", "CSS", "JavaScript"],
     highlights: [
-      "Enhanced internal web applications using HTML, CSS, and JavaScript",
-      "Improved UI structure and accessibility for better usability of internal tools",
+      "Enhanced internal web applications using HTML, CSS, and JavaScript, focusing on usability and frontend improvements.",
     ],
   },
 ];
 
 export const education = {
   degree: "Bachelor of Science in Computer Science",
-  institution: "NUTECH, Islamabad",
-  period: "Oct 2020 – Jun 2024",
+  institution: "National University of Technology (NUTECH), Islamabad, Pakistan",
+  period: "2020 – 2024",
 };
 
 export const certifications = [

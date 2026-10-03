@@ -80,8 +80,8 @@ export default function Contact() {
     <section id="contact" className="px-6 py-24 bg-[#0a0a0a]">
       <div className="mx-auto max-w-4xl">
         <SectionHeading
-          title="Get In Touch"
-          subtitle="Have a project in mind? Let's talk!"
+          title="Let's Work Together"
+          subtitle="I'm currently open to Software Engineer, Backend Developer, and Full-Stack Developer opportunities. If you'd like to discuss a project, opportunity, or collaboration, feel free to get in touch."
         />
 
         <div className="grid gap-10 md:grid-cols-2">
@@ -94,10 +94,10 @@ export default function Contact() {
           >
             <div className="flex items-center gap-4 rounded-xl border border-white/5 bg-[#111] p-4">
               <Mail className="h-5 w-5 text-cyan-400" />
-              <div className="flex-1">
+              <a href={`mailto:${personalInfo.email}`} className="flex-1">
                 <p className="text-sm text-gray-500">Email</p>
                 <p className="text-gray-300">{personalInfo.email}</p>
-              </div>
+              </a>
               <button
                 onClick={handleCopyEmail}
                 className="rounded-lg p-2 text-gray-400 transition-colors hover:bg-white/5 hover:text-cyan-400"
@@ -109,10 +109,10 @@ export default function Contact() {
 
             <div className="flex items-center gap-4 rounded-xl border border-white/5 bg-[#111] p-4">
               <Phone className="h-5 w-5 text-cyan-400" />
-              <div>
+              <a href={`tel:${personalInfo.phone}`}>
                 <p className="text-sm text-gray-500">Phone</p>
                 <p className="text-gray-300">{personalInfo.phone}</p>
-              </div>
+              </a>
             </div>
 
             <div className="flex items-center gap-4 rounded-xl border border-white/5 bg-[#111] p-4">
